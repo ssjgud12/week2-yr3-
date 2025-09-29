@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping
 
 
+
 public class RequestController
 {
     @GetMapping("/Good Morning World")
@@ -20,4 +21,13 @@ public class RequestController
     {
         return "Hello " + name + "!";
     }
+
+    @GetMapping ("/details")
+    public String details(@RequestParam String name, @RequestParam int age)
+    {
+        return "Name: " + name + " Age : " + age;
+    }
+
+
+
 }
