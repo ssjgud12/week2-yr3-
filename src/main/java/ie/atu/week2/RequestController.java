@@ -34,5 +34,12 @@ public class RequestController
         return new Person ("Olayemi", 67);
     }
 
+    @GetMapping ("/Addition")
+    public Calculator getCalculator (int x, int y, int z)
+    {
+        return new Calculator (x, y, z);
+    }
+
+
 
 }
