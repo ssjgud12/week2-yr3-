@@ -15,24 +15,7 @@ public Calculator(int x , int y, int z)
     this.y = y;
     this.z = z;
 
-    switch(op)
-    {
-        case "add":
-            add(x,y);
-            break;
 
-        case "Subtract":
-            subtract(x,y);
-            break;
-
-        case "Multiply":
-            multiply(x,y);
-            break;
-
-        case "Divide":
-            divide(x,y);
-            break;
-    }
 
 
 }
@@ -54,6 +37,8 @@ public Calculator(int x , int y, int z)
         return z;
     }
 }
+
+
 
 
 
